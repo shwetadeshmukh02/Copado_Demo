@@ -1,6 +1,9 @@
+// Create conflict
 public class OppUpdate {
     public static Opportunity setDefaultStatus(Opportunity a) {
+		if(a.Name == 'Test1'){
         a.oppStatus__c= 'test1'; 
+		}
         return a;
     }
     
